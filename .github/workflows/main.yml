@@ -31,7 +31,4 @@ jobs:
         run: node scripts/createNewEthereumIdentity.js
 
       - name: Link Human to Agent
-        run: |
-          node scripts/manualLinkHumanToAgent.js \
-          --challenge '{"name":"wisnuverse","description":"wisnuverse AI Agent"}' \
-          --cid wisnuverse
+        run: node scripts/manualLinkHumanToAgent.js --challenge '{"name":"wisnuverse","description":"wisnuverse AI Agent"}' --cid wisnuverse
